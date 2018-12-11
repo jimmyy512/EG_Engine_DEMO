@@ -63,23 +63,23 @@ var isShowBottomLabel=false;
 
 window.onload=()=>{
     EG=new Director(60,750,390,'canvasID',updateFunction,window);
-    footBG=new Sprite("image/bg_game.png",0,0,750,390,EG.Canvas);
-    card1=new Sprite("image/poker_back.png",160,170,66,87,EG.Canvas);
-    card2=new Sprite("image/poker_back.png",520,170,66,87,EG.Canvas);
-    arrow1=new Sprite("image/arrow_prompt.png",177,this.ArrowAS.arrowY,32,28,EG.Canvas);
-    arrow2=new Sprite("image/arrow_prompt.png",537,this.ArrowAS.arrowY,32,28,EG.Canvas);
-    soccerPlatform=new Sprite("image/soccer_pedestal.png",336,255,74,36,EG.Canvas);
-    soccer=new Sprite("image/soccer.png",336,this.ball.y,74,70,EG.Canvas);
-    soccerShadow=new Sprite("image/soccer_shadow.png",373,264,74,11,EG.Canvas);
+    footBG=new Sprite("image/bg_game.png",0,0,750,390);
+    card1=new Sprite("image/poker_back.png",160,170,66,87);
+    card2=new Sprite("image/poker_back.png",520,170,66,87);
+    arrow1=new Sprite("image/arrow_prompt.png",177,this.ArrowAS.arrowY,32,28);
+    arrow2=new Sprite("image/arrow_prompt.png",537,this.ArrowAS.arrowY,32,28);
+    soccerPlatform=new Sprite("image/soccer_pedestal.png",336,255,74,36);
+    soccer=new Sprite("image/soccer.png",336,this.ball.y,74,70);
+    soccerShadow=new Sprite("image/soccer_shadow.png",373,264,74,11);
     soccerShadow.setAnchorPoint(0.5,0.5);
     soccerShadow.setScale(0.5);
-    hand=new Sprite("image/countdown_hand_1.png",0,0,383,322,EG.Canvas);
-    soccer2=new Sprite("image/soccer.png",100,300,74,70,EG.Canvas);
-    CountSprite=new Sprite("image/countdown_num_5.png",490,205,60,60,EG.Canvas);
+    hand=new Sprite("image/countdown_hand_1.png",0,0,383,322);
+    soccer2=new Sprite("image/soccer.png",100,300,74,70);
+    CountSprite=new Sprite("image/countdown_num_5.png",490,205,60,60);
     CountSprite.setAnchorPoint(0.5,0.5);
     hand.setPosition(EG.visible.width-hand.getOriginWidth(),
                              hand.getOriginHeight());
-    bottomLabel=new Label("Majitoo",300,380,"Arial",40,"White",EG.Canvas);
+    bottomLabel=new Label("Majitoo",300,380,"Arial",40,"White");
 
     EG.addIntervalEvent("ArrowEvent",2,()=>
     {
